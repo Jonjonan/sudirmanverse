@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudirmanverse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="bottom-bar">
+      <div class="bottom-bar-section left">
+        <a href="#top">
+        <button class="bar-menu">Home</button>
+        </a>
+        <a href="#data">
+        <button class="bar-menu">About</button>
+        <a href="#project">
+        <button class="bar-menu">Portfolio</button>
+        </a>
+        <a href="#contact">
+        <button class="bar-menu">Contact</button>
+        </a>
+      </div>
+      <div class="bottom-bar-section center">
+        <a href="#top" class="bar-logo">SUDIRMAN</a>
+        <!-- <button class="theme-switcher" aria-label="Switch theme">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95 7.07-1.41-1.41M6.34 6.34 4.93 4.93m12.02 0-1.41 1.41M6.34 17.66l-1.41 1.41"/></svg>
+        </button> -->
+      </div>
+      <div class="bottom-bar-section right">
+        <!-- <button class="bar-lang">EN</button> -->
+        <input type="checkbox" id="hireme-toggle" class="hireme-toggle" hidden />
+        <label for="hireme-toggle" class="bar-hire">Hire Me</label>
+        <div class="hireme-popup-wrapper">
+          <div class="hireme-popup">
+            <label for="hireme-toggle" class="hireme-popup-close" title="Close">&times;</label>
+            <h2>Contact Me</h2>
+            <form class="hireme-form" action="mailto:sudirman@email.com" method="POST" enctype="text/plain">
+              <label for="hireme-name">Name:</label>
+              <input type="text" id="hireme-name" name="name" required>
+              <label for="hireme-email">Email:</label>
+              <input type="email" id="hireme-email" name="email" required>
+              <label for="hireme-message">Message:</label>
+              <textarea id="hireme-message" name="message" rows="4" required></textarea>
+              <button type="submit" class="btn btn-send">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </header>
+  <aside class="sidebar">
+    <div class="profile-pic">
+      <img src="images/profile.jpeg" alt="Profile Picture" />
+    </div>
+    <h1 class="name">SUDIRMAN</h1>
+    <p class="profession">UI/UIX DESIGNER</p>
+    <div class="contact">
+    <pre><i>Bandung, Indonesia</i><br><a href="tel:+62816703492">+62816703492</a></pre>
+    </div>
+    <div class="quote-carousel">
+      <input type="radio" name="quote" id="quote1" checked>
+      <input type="radio" name="quote" id="quote2">
+      <input type="radio" name="quote" id="quote3">
+      <div class="quotes-wrapper">
+        <label for="quote2" class="quote-label q1">
+          <blockquote class="quote q1">
+            <b>“Aut viam inveniam aut faciam”</b><br>
+            If there is no solution, make one.
+          </blockquote>
+        </label>
+        <label for="quote3" class="quote-label q2">
+          <blockquote class="quote q2">
+            “There are no coincidences in this world.”<br>
+            — Master Oogway
+          </blockquote>
+        </label>
+        <label for="quote1" class="quote-label q3">
+          <blockquote class="quote q3">
+            “Design is not just what it looks like and feels like. <b>Design is how it works.</b>”<br>
+            — Steve Jobs
+          </blockquote>
+        </label>
+      </div>
+    </div>
+
+    <div class="sidebar-row">
+      <a href="images/resume-sudirman.pdf" download="Resume Sudirman.pdf">
+      <button class="btn btn-resume">
+      <img src="images/download.svg" alt="Download Resume" class="download-icon"/>
+      Resume
+      </button>
+      </a>
+      <div class="social-icons">
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+        </a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576 4.765-1.588 8.199-6.084 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://medium.com/" target="_blank" aria-label="Medium">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 6.545c.007-.159-.045-.316-.147-.438l-1.2-1.45v-.22h3.77l2.92 6.39 2.56-6.39h3.62v.22l-1.03.99c-.09.07-.13.19-.11.3v10.34c-.02.11.02.23.11.3l1.01.99v.22h-5.17v-.22l1.04-1.01c.1-.1.1-.13.1-.3v-8.36l-2.91 7.89h-.39l-3.39-7.89v6.32c-.03.23.05.46.22.62l1.35 1.64v.22h-3.82v-.22l1.35-1.64c.17-.16.25-.39.21-.62v-7.19z"/></svg>
+        </a>
+        
+      </div>
+    </div>
+
+    <div class="sidebar-description">
+      <p>Experienced in Graphic and UI/UX Designer for 5+ years dedicate. Transforming user needs into engaging digital solutions. Driving impactful results through strong team collaboration and great attention to detail.</p>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="">Hi, Sudirman Here 👋</h1>
+        <h1 class="shiny-text">UI/UX DESIGNER +<br>SOFTWARE DEVELOPER</h1>
+        <p>Welcome to my website!<br>Designing as a solver, Developing with pleasure.</p>
+        <a href="#project">
+        <button class="mywork-btn">See Portofolio</button>
+        </a>
+      </div>
+      <div class="hero-image">
+        <img src="images/arasystudios.svg" alt="Hero Image"/>
+    </section> 
+
+    <section id="data">
+    <div class="data-content">
+      <h1 class="data-title">5+</h1>
+      <p class="data-subtitle">Years of Experience</p>
+    </div>
+    <div class="data-content">
+      <h1 class="header-title">10+</h1>
+      <p class="header-subtitle">Projects Completed</p>
+    </div>
+
+    <div class="data-content">
+      <h1 class="data-title">5+</h1>
+      <p class="data-subtitle">Happy Clients</p>
+    </div>
+
+    <div class="data-content">
+      <h1 class="data-title">10+</h1>
+      <p class="data-subtitle">Awards Won</p>
+    </div>
+    </section>
+
+    <section id="summary">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Summary" />
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Summary" />
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Summary" />
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Summary" />
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Summary" />
+    </section>
+    
+    <section id="about">
+      <h1>My Skills, My Capabilities</h1>
+      <p>Imagination Become Reality</p>
+      <div class="card-scroll">
+        <div class="about-card">
+          <img src="images/ui.svg" alt="UI Icon" class="ui-icon" />
+          <h2>UI/UX Designer</h2>
+          <p>Solving problems creatively and empathetically for users and stakeholders.</p>
+          <button class="see-more-btn">See More</button>
+        </div>
+        <div class="about-card">
+          <img src="images/web.svg" alt="UI Icon" class="ui-icon" />
+          <h2>Website Development</h2>
+          <p>Value of a purpose be accessible in the primary digital world.</p>
+          <button class="see-more-btn">See More</button>
+        </div>
+        <div class="about-card">
+          <img src="images/software.svg" alt="UI Icon" class="ui-icon" />
+          <h2>Software Development</h2>
+          <p>Crafting clean and intuitive user interfaces, allowing for effortless understanding and navigation.</p>
+          <button class="see-more-btn">See More</button>
+        </div>
+        <div class="about-card">
+          <img src="images/design.svg" alt="UI Icon" class="ui-icon" />
+          <h2>Graphic Design</h2>
+          <p>Transforming concepts and ideas into impactful visual designs.</p>
+          <button class="see-more-btn">See More</button>
+        </div>
+        <div class="about-card">
+          <img src="images/animation.svg" alt="UI Icon" class="ui-icon" />
+          <h2>2D Animation / Bumper</h2>
+          <p>Designing concise and memorable motion graphics to deliver a powerful message.</p>
+          </p>
+          <button class="see-more-btn">See More</button>
+        </div>
+      </div>
+      <div class="card-scroll-arrows">
+        <button class="card-arrow card-arrow-left" aria-label="Scroll left">
+          &#8592;
+        </button>
+        <button class="card-arrow card-arrow-right" aria-label="Scroll right">
+          &#8594;
+        </button>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="project-header">
+        <h1>My Project, My Adventure</h1>
+        <p>Committed to Continuous Growth, Adaptation, and Learning of New Skills and Technologies.</p>
+      </div>
+      <div class="project-content">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Project" class="project-img" />
+        <div class="project-text">
+          <h2>Mitra OS (Beleaf Farms)</h2>
+          <p>Recent work: <b>Redesigning a fintech dashboard</b> for improved usability and visual clarity. See more in my portfolio!</p>
+          <div class="project-icons-row">
+            <div class="project-icons">
+              <img src="images/html-icon.svg" alt="HTML" class="project-icon" />
+              <img src="images/css-icon.svg" alt="CSS" class="project-icon" />
+              <img src="images/js-icon.svg" alt="JavaScript" class="project-icon" />
+              <button class="see-more-btn" onclick="document.getElementById('project-popup').style.display='block'">See More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Popup for full description -->
+        <div id="project-popup" class="project-popup">
+          <div class="project-popup-content">
+            <button class="project-popup-close" onclick="document.getElementById('project-popup').style.display='none'">&times;</button>
+            <div class="project-popup-header">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Project" class="project-popup-img" />
+              <div class="project-popup-title-desc">
+                <h2>Mitra OS (Beleaf Farms)</h2>
+                <p class="project-popup-short">Recent work: <b>Redesigning a fintech dashboard</b> for improved usability and visual clarity. See more in my portfolio!</p>
+              </div>
+            </div>
+            <p class="project-popup-full">Full description: Mitra OS is a comprehensive operating system for Beleaf Farms, designed to streamline farm management, financial tracking, and team collaboration. The recent redesign focused on improving usability, visual clarity, and integrating new fintech features for seamless operations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-text">
+          <h1>Beleaf OS (Beleaf Farms)</h1>
+          <p>Recent work: <b>Redesigning a fintech dashboard</b> for improved usability and visual clarity. See more in my portfolio!</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Project" class="project-img" />
+      </div>
+      <div class="project-content">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Project" class="project-img" />
+        <div class="project-text">
+          <h1>Company Website (Beleaf Farms)</h1>
+          <p>Recent work: <b>Redesigning a fintech dashboard</b> for improved usability and visual clarity. See more in my portfolio!</p>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-text">
+          <h1>Netflix Clone</h1>
+          <p>Recent work: <b>Redesigning a fintech dashboard</b> for improved usability and visual clarity. See more in my portfolio!</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Project" class="project-img" />
+      </div>
+      <div class="project-content">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Project" class="project-img" />
+        <div class="project-text">
+          <h1>Company Website (Pudak Scientific)</h1>
+          <p>Recent work: <b>Redesigning a fintech dashboard</b> for improved usability and visual clarity. See more in my portfolio!</p>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-text">
+          <h1>CV 2023 (Sudirman)</h1>
+          <p>Recent work: <b>Redesigning a fintech dashboard</b> for improved usability and visual clarity. See more in my portfolio!</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Project" class="project-img" />
+      </div>
+      <div class="project-content">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Project" class="project-img" />
+        <div class="project-text">
+          <h1>Company Website (Pudak Scientific)</h1>
+          <p>Recent work: <b>Redesigning a fintech dashboard</b> for improved usability and visual clarity. See more in my portfolio!</p>
+        </div>
+      </div>
+
+    </section>
+    <section id="skill-tool">
+        <div class="project-header">
+        <h1>Experience Driven Results</h1>
+        <p>Committed to Continuous Growth, Adaptation, and Learning of New Skills and Technologies.</p>
+      </div>
+      <div class="flex-container">
+
+              <!-- Left Column: My Work / Professional Journey -->
+              <div class="column">
+                  <h3 class="column-header">My Work Journey</h3>
+                  <div class="column-content-text">
+                      <p>
+                          Starting my career in software development, I've always been driven by the desire to build intuitive and efficient solutions. My journey began with [mention initial role/project], where I honed my skills in [specific tech/area].
+                      </p>
+                      <!-- Add more details about your work/journey here -->
+                      <ul class="column-content-list">
+                          <li><strong>Project A:</strong> Developed a [feature] using [tech stack].</li>
+                          <li><strong>Role B:</strong> Contributed to [project goal] by [action].</li>
+                          <li><strong>Skill C:</strong> Applied [skill] to improve [metric/outcome].</li>
+                      </ul>
+                  </div>
+              </div>
+
+              <!-- Right Column: Testimonials -->
+              <div class="column">
+                  <h3 class="column-header testimonial-column-header">What People Say</h3>
+                  <div class="testimonial-container">
+                    <div class="testimonial-list">
+                      <!-- Testimonial Set 1 (Original Content) -->
+                      <div class="testimonial-item">
+                          <p class="italic">"Pudak's dedication to intuitive design is truly remarkable. Their software is a joy to use, even for first-time users."</p>
+                          <p class="font-semibold">- Jacob Holmes, General Manager at Pudak Scientific</p>
+                      </div>
+                      <div class="testimonial-item">
+                          <p class="italic">"Their ability to translate complex ideas into clear, functional applications is outstanding. A true problem-solver."</p>
+                          <p class="font-semibold">- Parth Sharma, VP Tech & Product at Beleaf Farms</p>
+                      </div>
+                      <div class="testimonial-item">
+                          <p class="italic">"Working with Pudak was a pleasure. The attention to detail and commitment to quality made all the difference."</p>
+                          <p class="font-semibold">- Endar Sasmito, Product Manager at Beleaf Farms</p>
+                      </div>
+                      <div class="testimonial-item">
+                          <p class="italic">"Pudak consistently delivers high-impact solutions. Their work ethic and adaptability are truly impressive."</p>
+                          <p class="font-semibold">- Lili Ferliyansah, Front-End Developer at Lovely College</p>
+                      </div>
+                      <div class="testimonial-item">
+                          <p class="italic">"A man of great character, he is a loving husband and very harmful as a father. He is responsible for his own family, and it is the highest blessing to be his partner in this universe"</p>
+                          <p class="font-semibold">- Sarah Salsabila, Wife at Sudirman's Life</p>
+                      </div>
+
+                      <!-- Testimonial Set 2 (Duplicated Content for Seamless Loop) -->
+                      <div class="testimonial-item">
+                          <p class="italic">"Pudak's dedication to intuitive design is truly remarkable. Their software is a joy to use, even for first-time users."</p>
+                          <p class="font-semibold">- Jacob Holmes, General Manager at Pudak Scientific</p>
+                      </div>
+                      <div class="testimonial-item">
+                          <p class="italic">"Their ability to translate complex ideas into clear, functional applications is outstanding. A true problem-solver."</p>
+                          <p class="font-semibold">- Parth Sharma, VP Tech & Product at Beleaf Farms</p>
+                      </div>
+                      <div class="testimonial-item">
+                          <p class="italic">"Working with Pudak was a pleasure. The attention to detail and commitment to quality made all the difference."</p>
+                          <p class="font-semibold">- Endar Sasmito, Product Manager at Beleaf Farms</p>
+                      </div>
+                      <div class="testimonial-item">
+                          <p class="italic">"Pudak consistently delivers high-impact solutions. Their work ethic and adaptability are truly impressive."</p>
+                          <p class="font-semibold">- Lili Ferliyansah, Front-End Developer at Lovely College</p>
+                      </div>
+                      <div class="testimonial-item">
+                          <p class="italic">"A man of great character, he is a loving husband and very harmful as a father. He is responsible for his own family, and it is the highest blessing to be his partner in this universe"</p>
+                          <p class="font-semibold">- Sarah Salsabila, Wife at Sudirman's Life</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="main-section">
+      <h2>Contact</h2>
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Contact" />
+      <p>Let's connect! Email: <a href="mailto:sudirman@email.com">sudirman@email.com</a></p>
+    </section>
+  </main>
+
+    <footer>
+    <div>
+      <p>Build with <a href="images/ghcs.svg" target="_blank"></a>  Using ❤</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+        </a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576 4.765-1.588 8.199-6.084 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="images/dribbble.svg" target="_blank"></a>
+      </div>
+    <div class="footer__info">
+      <div>
+        <p>Developed by Sudirman</p>
+      </div>
+      <div>
+        <p>Copyright &copy; 2025</p>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+  // Card scroll arrow functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const leftArrow = document.querySelector('.card-arrow-left');
+    const rightArrow = document.querySelector('.card-arrow-right');
+    const cardScroll = document.querySelector('.card-scroll');
+    if (leftArrow && rightArrow && cardScroll) {
+      leftArrow.addEventListener('click', function() {
+        cardScroll.scrollBy({ left: -300, behavior: 'smooth' });
+      });
+      rightArrow.addEventListener('click', function() {
+        cardScroll.scrollBy({ left: 300, behavior: 'smooth' });
+      });
+    }
+  });
+</script>
+</body>
+</html>
